@@ -175,6 +175,18 @@
   }
   .mail-row:hover { background: var(--accent-soft); }
   .mail-row svg { flex-shrink: 0; opacity: 0.8; }
+  .vcard-row {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    display: flex; align-items: center; justify-content: center; gap: 9px;
+    padding: 13px 15px; text-decoration: none;
+    font-size: 13px; font-weight: 600; letter-spacing: 0.2px;
+    color: #FFF6F1; background: var(--accent);
+    border-bottom: 1px solid var(--border);
+    transition: filter 0.12s;
+  }
+  .vcard-row:hover { filter: brightness(1.06); }
+  .vcard-row:active { filter: brightness(0.96); }
+  .vcard-row svg { flex-shrink: 0; }
   .social-row { display: flex; }
   .social-btn {
     font-family: 'DM Sans', system-ui, sans-serif;
@@ -287,6 +299,10 @@
     <a href="mailto:moritz.me.engelhardt@fau.de" class="mail-row">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
       moritz.me.engelhardt@fau.de
+    </a>
+    <a href="data:text/vcard;base64,QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpOOkVuZ2VsaGFyZHQ7TW9yaXR6Ozs7DQpGTjpNb3JpdHogRW5nZWxoYXJkdA0KVElUTEU6UGhEIHN0dWRlbnQNCk9SRzpVbml2ZXJzaXR5IENsaW5pYyBFcmxhbmdlbg0KRU1BSUw7VFlQRT1JTlRFUk5FVCxXT1JLOm1vcml0ei5tZS5lbmdlbGhhcmR0QGZhdS5kZQ0KVVJMOmh0dHBzOi8vb3JjaWQub3JnLzAwMDktMDAwMS0xNDA2LTg1MlgNCkVORDpWQ0FSRA0K" download="Moritz_Engelhardt.vcf" class="vcard-row">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
+      Add contact
     </a>
     <div class="social-row">
       <a href="https://www.linkedin.com/in/moritz-engelhardt-neuro/" class="social-btn">
