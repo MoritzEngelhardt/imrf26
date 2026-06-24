@@ -87,12 +87,18 @@
     color: var(--ink-faint); margin-left: 12px;
   }
 
+  .hero-badges { display: flex; align-items: center; gap: 7px; margin-bottom: 12px; }
+
   .hero-badge {
     display: inline-block;
     font-family: 'DM Sans', system-ui, sans-serif;
     font-size: 9.5px; font-weight: 600; letter-spacing: 1.1px; text-transform: uppercase;
     color: var(--accent-dark); background: var(--accent-soft);
-    border-radius: 6px; padding: 4px 9px; margin-bottom: 12px;
+    border-radius: 6px; padding: 4px 9px;
+  }
+
+  .hero-badge.number {
+    color: #FFF6F1; background: var(--accent);
   }
 
   .hero-title {
@@ -239,7 +245,10 @@
       <span class="sense-caption">Sight · Sound · Scent</span>
     </div>
 
-    <div class="hero-badge">Poster presentation</div>
+    <div class="hero-badges">
+      <span class="hero-badge">Poster presentation</span>
+      <span class="hero-badge number">#4.32</span>
+    </div>
     <h1 class="hero-title">
       <span class="w1">Sights,</span> <span class="w2">Sounds</span> <span class="amp">&amp;</span><br><span class="w3">Scents</span>
     </h1>
@@ -263,7 +272,7 @@
       <div class="btn-body">
         <span class="pill-tag">Download</span>
         <span class="btn-label">Poster PDF</span>
-        <span class="btn-sub">High-res · A0 format</span>
+        <span class="btn-sub">High-res · A0 format · #4.32</span>
       </div>
       <span class="btn-arrow">↓</span>
     </a>
@@ -321,7 +330,7 @@
   </div>
 
   <div class="footer">
-    <p class="footer-note">24th International Multisensory Research Forum · Genoa, 2026<br>Multisensory enrichment of advertising</p>
+    <p class="footer-note">24th International Multisensory Research Forum · Genoa, 2026<br>Poster #4.32 · Multisensory enrichment of advertising</p>
     <div class="footer-links">
       <a href="impressum.html">Impressum</a>
       <span class="sep">·</span>
